@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,10 +74,35 @@
                 style="@style/Widget.AppCompat.RatingBar.Indicator"
 
                 />
+            <Button
+                android:id="@+id/btnAddUpdate"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Adicionar"
+                android:textSize="20sp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                />
 
         </LinearLayout>
 
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/listViewWishes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlinearLayoutHorizontal"
+        />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
 
     </LinearLayout>
-    </androidx.cardview.widget.CardView>
 </RelativeLayout>

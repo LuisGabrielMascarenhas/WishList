@@ -39,12 +39,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-            <EditText
-                android:id="@+id/editId"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:hint="Número"
-                />
+
             <EditText
                 android:id="@+id/editTextName"
                 android:layout_width="wrap_content"
@@ -70,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:numStars="5"
                 android:stepSize="1"
-                style="@style/Widget.AppCompat.RatingBar.Indicator"
+
 
                 />
             <Button

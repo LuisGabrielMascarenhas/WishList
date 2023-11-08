@@ -70,7 +70,7 @@ public class RequestHandler {
 
             String s;
             while ((s = bufferedReader.readLine()) != null){
-                sb.append(s+"\n");
+                sb.append(s + "\n");
             }
         }catch (Exception e){
         }
@@ -85,7 +85,7 @@ public class RequestHandler {
             else
                 result.append("&");
             result.append(URLEncoder.encode(entry.getKey(),"UTF-8"));
-            result.append("-");
+            result.append("=");
             result.append(URLEncoder.encode(entry.getValue(),"UTF-8"));
         }
         return result.toString();
